@@ -18,5 +18,7 @@ class GameResultsService {
         gameHistory.add(result)
     }
 
-    fun getAllGameResults(): List<GameResult> = = gameHistory.reversed()
+    fun getAllGameResults(): List<GameResult> {
+        return gameHistory.reversed()
+    }
 }
