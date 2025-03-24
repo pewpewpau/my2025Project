@@ -13,7 +13,7 @@ class TeamService {
     }
 
     fun generateTeamsForOneRound(teamsNumber: Int): List<Team> {
-        val teams = List(count) { Team(identifierFactory.uniqueIdentifier()) }
+        val teams = List(teamsNumber) { Team(identifierFactory.uniqueIdentifier()) }
         teams.forEach { teamsStorage[it.id] = it }
         return teams
     }
