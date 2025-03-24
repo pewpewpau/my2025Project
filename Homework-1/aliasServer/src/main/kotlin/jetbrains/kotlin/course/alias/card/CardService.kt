@@ -2,11 +2,11 @@ package jetbrains.kotlin.course.alias.card
 
 import org.springframework.stereotype.Service
 import jetbrains.kotlin.course.alias.util.IdentifierFactory
+import jetbrains.kotlin.course.alias.util.words
 
 @Service
 class CardService {
     private val identifierFactory = IdentifierFactory()
-    private val words = listOf()
     val cards: List<Card> = generateCards()
 
     companion object {

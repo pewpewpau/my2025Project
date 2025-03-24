@@ -8,6 +8,6 @@ class AliasApplication
 
 @Suppress("SpreadOperator")
 fun main(args: Array<String>) {
-    runApplication<AliasApplication>(*args)o
+    runApplication<AliasApplication>(*args)
 }
 
